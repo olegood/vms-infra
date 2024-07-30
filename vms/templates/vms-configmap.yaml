@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: vms-configmap
+  labels:
+    app: vms
+data:
+  VMS_DATASOURCE_URL: "jdbc:postgresql://postgres-clusterip:5432/postgres"
+  VMS_DATASOURCE_USERNAME: "root"
+  VMS_DATASOURCE_PASSWORD: "root"
