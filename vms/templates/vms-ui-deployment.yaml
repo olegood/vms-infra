@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: vms-ui
+  name: vms-ui
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vms-ui
+  template:
+    metadata:
+      labels:
+        app: vms-ui
+    spec:
+      containers:
+        - image: vms-ui:1.0-SNAPSHOT
+          name: vms-ui

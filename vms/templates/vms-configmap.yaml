@@ -8,3 +8,4 @@ data:
   VMS_DATASOURCE_URL: "jdbc:postgresql://postgres-clusterip:5432/postgres"
   VMS_DATASOURCE_USERNAME: "root"
   VMS_DATASOURCE_PASSWORD: "root"
+  FEATURE_CONTROL: "AddVoucherEP,MultipleDocsEP,NewReleaseDisabled"
